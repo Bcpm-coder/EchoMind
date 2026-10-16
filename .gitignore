@@ -48,3 +48,7 @@ htmlcov/
 
 # 本地项目文档，不公开提交
 /wiki/
+
+# Markdown 仅公开根目录 README
+*.[mM][dD]
+!/README.md

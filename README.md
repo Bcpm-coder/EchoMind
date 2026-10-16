@@ -137,12 +137,14 @@ mcp/tool_manager.py            检索工具、缓存、熔断与重排
 mcp/knowledge_base.py          ChromaDB 知识库
 monitor/performance_monitor.py 在线监控
 evaluation/evaluator.py       端到端评测
-skills/                       业务处理规范
+skills/                       本地业务处理规范（不随仓库提交）
 tests/                        单元测试
 config/                       Nginx 与 Prometheus 配置
 ```
 
 建议先读 `api/main.py` 中的 `/chat`，再看意图识别、Agent 编排和工具管理。运行时的 `data/` 与 `logs/` 由本地服务使用，不纳入版本控制。
+
+业务 Skills 需自行在 `skills/` 中配置；本仓库不附带默认规则文件。未配置时不会加载这些规则。
 
 ## 本地测试
 
